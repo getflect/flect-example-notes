@@ -1,4 +1,4 @@
-image := "ghcr.io/dotlabshq/flect-example-notes"
+image := "ghcr.io/getflect/flect-example-notes"
 
 # Install dependencies (no build step — Node runs the TypeScript directly).
 install:
