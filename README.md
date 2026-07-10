@@ -1,5 +1,7 @@
 # flect-example-notes
 
+**Live:** https://flect-example-notes-6b6e4f.up.flect.run
+
 The smallest possible **Flect database** example: a public notes app where the
 whole data layer is three lines.
 
