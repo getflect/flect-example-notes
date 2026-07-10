@@ -1,0 +1,21 @@
+name    = "flect-example-notes"
+runtime = "node"
+port    = 3000
+
+# Where this project lives in the scope tree (workspace/project/environment).
+# `flect deploy` resolves this path and CREATES any missing scope.
+scope   = "examples/notes/prod"
+
+# Deployment region — only "eu" exists today (the default); more regions later.
+# region = "eu"
+
+[[apps]]
+name   = "flect-example-notes"
+image  = "ghcr.io/dotlabshq/flect-example-notes:0.1.0"
+port   = 3000
+public = true            # owns the domain → https://flect-example-notes-<shortid>.up.flect.run
+
+# The one binding this example is about: code calls env.db("DB").
+[[databases]]
+binding = "DB"
+name    = "flect-example-notes"

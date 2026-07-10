@@ -1,0 +1,8 @@
+node_modules/
+flect.local.json
+*.db
+.DS_Store
+
+# Flect local dev (may contain resolved connections)
+flect.local.json
+.flect/
